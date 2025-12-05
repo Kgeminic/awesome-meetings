@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A curated list of the best tools, frameworks, APIs, workflows, and services for B2B lead scraping, enrichment, automation, and CRM-ready data pipelines — maintained by Lead Orchestra.">
+    <meta name="keywords" content="b2b lead scraping, web scraping tools, lead enrichment APIs, browser automation scraping, Playwright, n8n workflows, CRM automation, email verification, proxy rotation">
+    <meta name="author" content="Lead Orchestra">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lead-orchestra.github.io/awesome-b2b-leads/">
+    <meta property="og:title" content="Awesome Web Scraping for B2B Leads | Lead Orchestra">
+    <meta property="og:description" content="Curated list of best tools for B2B lead scraping, enrichment, automation, and CRM-ready data pipelines.">
+    <meta property="og:image" content="https://lead-orchestra.github.io/awesome-b2b-leads/assets/og-image.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://lead-orchestra.github.io/awesome-b2b-leads/">
+    <meta property="twitter:title" content="Awesome Web Scraping for B2B Leads | Lead Orchestra">
+    <meta property="twitter:description" content="Curated list of best tools for B2B lead scraping, enrichment, automation, and CRM-ready data pipelines.">
+    <meta property="twitter:image" content="https://lead-orchestra.github.io/awesome-b2b-leads/assets/og-image.png">
+    
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json" src="schema.jsonld"></script>
+    
+    <title>Awesome Web Scraping for B2B Leads | Lead Orchestra</title>
+    
+    <!-- Inter Font (Brand Primary) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- JetBrains Mono for Code -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Brand Colors & Styles -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'orch-black': '#0C0C0D',
+                        'signal-blue': '#006CFF',
+                        'automation-teal': '#1BC9C9',
+                        'graph-white': '#F9FAFB',
+                        'neutral-900': '#111113',
+                        'neutral-700': '#3A3A3C',
+                        'neutral-500': '#71717A',
+                        'neutral-300': '#D1D5DB',
+                        'neutral-100': '#F3F4F6',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                        'mono': ['JetBrains Mono', 'monospace'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Custom brand styles */
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+        code, pre {
+            font-family: 'JetBrains Mono', monospace;
+        }
+        .brand-divider {
+            border-color: #D1D5DB;
+        }
+    </style>
+    
+    <link rel="canonical" href="https://lead-orchestra.github.io/awesome-b2b-leads/">
+</head>
+<body class="bg-graph-white text-neutral-900 antialiased">
+    <!-- Header -->
+    <header class="bg-orch-black text-white">
+        <div class="max-w-7xl mx-auto px-6 py-16 md:py-20">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight mb-3">
+                Awesome Web Scraping for B2B Leads
+            </h1>
+            <p class="text-lg md:text-xl text-neutral-300">
+                Curated by <strong class="font-semibold">Lead Orchestra</strong> — 
+                <a href="https://leadorchestra.com" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors underline">
+                    leadorchestra.com
+                </a>
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-6 py-12">
+        <!-- Intro Section -->
+        <section class="mb-16">
+            <div class="bg-white border border-neutral-300 rounded-lg p-8 md:p-10">
+                <p class="text-lg md:text-xl leading-relaxed text-neutral-700">
+                    A fully-curated, SEO-optimized list of the <strong class="text-neutral-900 font-semibold">best tools, frameworks, APIs, workflows, and services</strong> for  
+                    <strong class="text-neutral-900 font-semibold">B2B lead scraping, enrichment, automation, and CRM-ready data pipelines</strong> — maintained by Lead Orchestra.
+                </p>
+            </div>
+        </section>
+
+        <!-- About Lead Orchestra -->
+        <section class="mb-16 border-t brand-divider pt-12">
+            <h2 class="text-3xl md:text-4xl font-medium text-neutral-900 mb-6 pb-3 border-b-2 border-signal-blue inline-block">
+                What Is Lead Orchestra?
+            </h2>
+            <div class="bg-white border border-neutral-300 rounded-lg p-8 md:p-10 mt-6">
+                <p class="text-neutral-700 mb-4">
+                    <strong class="text-neutral-900 font-semibold">Lead Orchestra</strong> is a complete <strong class="text-neutral-900 font-semibold">B2B lead scraping & automation platform</strong> that orchestrates:
+                </p>
+                <ul class="list-disc list-inside space-y-2 text-neutral-700 ml-4">
+                    <li>Web scraping at scale</li>
+                    <li>Undetectable browser automation</li>
+                    <li>Data enrichment (email, company, social, intent)</li>
+                    <li>Lead verification & deduplication</li>
+                    <li>n8n / Make.com automation workflows</li>
+                    <li>CRM export (HubSpot, Salesforce, Pipedrive, GoHighLevel, Deal Scale)</li>
+                </ul>
+                <p class="text-neutral-700 mt-6">
+                    Learn more → <a href="https://leadorchestra.com" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-medium">leadorchestra.com</a>
+                </p>
+                <p class="text-neutral-700 mt-4">
+                    This GitHub repository supports the project by offering the <strong class="text-neutral-900 font-semibold">best-in-class curated tools</strong> used in modern lead generation pipelines.
+                </p>
+            </div>
+        </section>
+
+        <!-- Table of Contents -->
+        <section class="mb-16 border-t brand-divider pt-12">
+            <h2 class="text-3xl md:text-4xl font-medium text-neutral-900 mb-6 pb-3 border-b-2 border-signal-blue inline-block">
+                Table of Contents
+            </h2>
+            <nav class="bg-white border-l-4 border-signal-blue border border-neutral-300 rounded-lg p-8 mt-6">
+                <ul class="space-y-3">
+                    <li><a href="#web-scraping-frameworks" class="text-neutral-900 font-medium hover:text-signal-blue transition-colors">Web Scraping Frameworks</a></li>
+                    <li><a href="#headless-browser-automation" class="text-neutral-900 font-medium hover:text-signal-blue transition-colors">Headless Browser & Automation Tools</a></li>
+                    <li><a href="#b2b-lead-enrichment" class="text-neutral-900 font-medium hover:text-signal-blue transition-colors">B2B Lead Enrichment APIs</a></li>
+                    <li><a href="#email-verification" class="text-neutral-900 font-medium hover:text-signal-blue transition-colors">Email Verification Services</a></li>
+                    <li><a href="#proxy-anti-bot" class="text-neutral-900 font-medium hover:text-signal-blue transition-colors">Proxy & Anti-Bot Providers</a></li>
+                    <li><a href="#n8n-workflows" class="text-neutral-900 font-medium hover:text-signal-blue transition-colors">n8n Workflows & Automation Nodes</a></li>
+                    <li><a href="#example-pipeline" class="text-neutral-900 font-medium hover:text-signal-blue transition-colors">Example B2B Lead Pipeline</a></li>
+                    <li><a href="#contributing" class="text-neutral-900 font-medium hover:text-signal-blue transition-colors">Contributing</a></li>
+                    <li><a href="#license" class="text-neutral-900 font-medium hover:text-signal-blue transition-colors">License</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <!-- Web Scraping Frameworks -->
+        <section id="web-scraping-frameworks" class="mb-16 border-t brand-divider pt-12">
+            <h2 class="text-3xl md:text-4xl font-medium text-neutral-900 mb-6 pb-3 border-b-2 border-signal-blue inline-block">
+                Web Scraping Frameworks
+            </h2>
+            <div class="bg-white border border-neutral-300 rounded-lg p-8 md:p-10 mt-6">
+                <p class="text-neutral-700 mb-6">High-performance, scalable frameworks for scraping B2B data:</p>
+                
+                <div class="mb-8">
+                    <h3 class="text-2xl md:text-3xl font-medium text-neutral-900 mb-4">Python</h3>
+                    <ul class="space-y-4 text-neutral-700">
+                        <li>
+                            <strong class="text-neutral-900 font-semibold">Scrapy</strong> – 
+                            <a href="https://scrapy.org" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm">scrapy.org</a><br>
+                            <span class="text-neutral-500">Fast, battle-tested crawling framework for large-scale scraping.</span>
+                        </li>
+                        <li>
+                            <strong class="text-neutral-900 font-semibold">BeautifulSoup</strong> – 
+                            <a href="https://www.crummy.com/software/BeautifulSoup/" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm">crummy.com/software/BeautifulSoup</a><br>
+                            <span class="text-neutral-500">HTML/XML parsing helper for quick extraction.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-2xl md:text-3xl font-medium text-neutral-900 mb-4">JavaScript / TypeScript</h3>
+                    <ul class="space-y-4 text-neutral-700">
+                        <li>
+                            <strong class="text-neutral-900 font-semibold">Crawlee</strong> – 
+                            <a href="https://crawlee.dev" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm">crawlee.dev</a><br>
+                            <span class="text-neutral-500">Production-grade scraping framework from Apify.</span>
+                        </li>
+                        <li>
+                            <strong class="text-neutral-900 font-semibold">Cheerio</strong> – 
+                            <a href="https://cheerio.js.org" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm">cheerio.js.org</a><br>
+                            <span class="text-neutral-500">Fast HTML parsing for Node.js scraping tasks.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl md:text-3xl font-medium text-neutral-900 mb-4">No-Code Scraping Tools</h3>
+                    <ul class="space-y-4 text-neutral-700">
+                        <li>
+                            <strong class="text-neutral-900 font-semibold">Octoparse</strong> – 
+                            <a href="https://octoparse.com" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm">octoparse.com</a><br>
+                            <span class="text-neutral-500">Visual scraper for non-developers; supports JS-rendered sites.</span>
+                        </li>
+                        <li>
+                            <strong class="text-neutral-900 font-semibold">ParseHub</strong> – 
+                            <a href="https://parsehub.com" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm">parsehub.com</a><br>
+                            <span class="text-neutral-500">Good for static and semi-dynamic websites.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Headless Browser & Automation -->
+        <section id="headless-browser-automation" class="mb-16 border-t brand-divider pt-12">
+            <h2 class="text-3xl md:text-4xl font-medium text-neutral-900 mb-6 pb-3 border-b-2 border-signal-blue inline-block">
+                Headless Browser & Automation Tools
+            </h2>
+            <div class="bg-white border border-neutral-300 rounded-lg p-8 md:p-10 mt-6">
+                <p class="text-neutral-700 mb-6">Use these for undetectable scraping, dynamic content, infinite scroll, and JS-heavy websites.</p>
+                <ul class="space-y-4 text-neutral-700">
+                    <li>
+                        <strong class="text-neutral-900 font-semibold">Playwright</strong> – 
+                        <a href="https://playwright.dev" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm">playwright.dev</a><br>
+                        <span class="text-neutral-500">Multi-browser (Chromium, WebKit, Firefox) automation, best anti-bot resistance.</span>
+                    </li>
+                    <li>
+                        <strong class="text-neutral-900 font-semibold">Puppeteer</strong> – 
+                        <a href="https://pptr.dev" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm">pptr.dev</a><br>
+                        <span class="text-neutral-500">Chrome-only automation for scraping & testing.</span>
+                    </li>
+                    <li>
+                        <strong class="text-neutral-900 font-semibold">Selenium</strong> – 
+                        <a href="https://www.selenium.dev" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm">selenium.dev</a><br>
+                        <span class="text-neutral-500">Classic browser automation, supports multiple languages.</span>
+                    </li>
+                    <li>
+                        <strong class="text-neutral-900 font-semibold">Apify Actors</strong> – 
+                        <a href="https://apify.com" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm">apify.com</a><br>
+                        <span class="text-neutral-500">Cloud headless browser environment with rotation, retries, storage.</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- B2B Lead Enrichment -->
+        <section id="b2b-lead-enrichment" class="mb-16 border-t brand-divider pt-12">
+            <h2 class="text-3xl md:text-4xl font-medium text-neutral-900 mb-6 pb-3 border-b-2 border-signal-blue inline-block">
+                B2B Lead Enrichment APIs
+            </h2>
+            <div class="bg-white border border-neutral-300 rounded-lg p-8 md:p-10 mt-6">
+                <p class="text-neutral-700 mb-6">Turn raw scraped data into <strong class="text-neutral-900 font-semibold">sales-ready enriched profiles</strong>.</p>
+                
+                <h3 class="text-2xl md:text-3xl font-medium text-neutral-900 mb-4">Top Enrichment Providers</h3>
+                <ul class="space-y-4 text-neutral-700">
+                    <li>
+                        <strong class="text-neutral-900 font-semibold">Clearbit</strong> – 
+                        <a href="https://clearbit.com" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm">clearbit.com</a><br>
+                        <span class="text-neutral-500">Person + company enrichment, intent data, technographics.</span>
+                    </li>
+                    <li>
+                        <strong class="text-neutral-900 font-semibold">Apollo.io API</strong> – 
+                        <a href="https://apollo.io" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm">apollo.io</a><br>
+                        <span class="text-neutral-500">Huge B2B contact database, enrichment, verified emails.</span>
+                    </li>
+                    <li>
+                        <strong class="text-neutral-900 font-semibold">ZoomInfo</strong> – 
+                        <a href="https://zoominfo.com" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm">zoominfo.com</a><br>
+                        <span class="text-neutral-500">Enterprise-level B2B enrichment and intent data.</span>
+                    </li>
+                    <li>
+                        <strong class="text-neutral-900 font-semibold">People Data Labs (PDL)</strong> – 
+                        <a href="https://peopledatalabs.com" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm">peopledatalabs.com</a><br>
+                        <span class="text-neutral-500">Massive dataset for people + company attributes.</span>
+                    </li>
+                    <li>
+                        <strong class="text-neutral-900 font-semibold">Clay</strong> – 
+                        <a href="https://clay.com" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm">clay.com</a><br>
+                        <span class="text-neutral-500">50+ enrichment sources in one API (or UI). Great for workflows.</span>
+                    </li>
+                    <li>
+                        <strong class="text-neutral-900 font-semibold">FullContact</strong> – 
+                        <a href="https://fullcontact.com" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm">fullcontact.com</a><br>
+                        <span class="text-neutral-500">Person-level identity resolution & enrichment.</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Email Verification -->
+        <section id="email-verification" class="mb-16 border-t brand-divider pt-12">
+            <h2 class="text-3xl md:text-4xl font-medium text-neutral-900 mb-6 pb-3 border-b-2 border-signal-blue inline-block">
+                Email Verification Services
+            </h2>
+            <div class="bg-white border border-neutral-300 rounded-lg p-8 md:p-10 mt-6">
+                <p class="text-neutral-700 mb-6">Ensure deliverability & reduce bounce rates.</p>
+                <ul class="space-y-3 text-neutral-700">
+                    <li>
+                        <strong class="text-neutral-900 font-semibold">NeverBounce</strong> – 
+                        <a href="https://neverbounce.com" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm">neverbounce.com</a>
+                    </li>
+                    <li>
+                        <strong class="text-neutral-900 font-semibold">ZeroBounce</strong> – 
+                        <a href="https://zerobounce.net" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm">zerobounce.net</a>
+                    </li>
+                    <li>
+                        <strong class="text-neutral-900 font-semibold">Kickbox</strong> – 
+                        <a href="https://kickbox.com" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm">kickbox.com</a>
+                    </li>
+                    <li>
+                        <strong class="text-neutral-900 font-semibold">Hunter Verify</strong> – 
+                        <a href="https://hunter.io/email-verifier" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm">hunter.io/email-verifier</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Proxy & Anti-Bot -->
+        <section id="proxy-anti-bot" class="mb-16 border-t brand-divider pt-12">
+            <h2 class="text-3xl md:text-4xl font-medium text-neutral-900 mb-6 pb-3 border-b-2 border-signal-blue inline-block">
+                Proxy & Anti-Bot Providers
+            </h2>
+            <div class="bg-white border border-neutral-300 rounded-lg p-8 md:p-10 mt-6">
+                <p class="text-neutral-700 mb-6">Necessary for large-scale scraping without blocks.</p>
+                <ul class="space-y-4 text-neutral-700">
+                    <li>
+                        <strong class="text-neutral-900 font-semibold">Bright Data</strong> – 
+                        <a href="https://brightdata.com" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm">brightdata.com</a><br>
+                        <span class="text-neutral-500">Industry-leading residential & mobile proxies.</span>
+                    </li>
+                    <li>
+                        <strong class="text-neutral-900 font-semibold">Oxylabs</strong> – 
+                        <a href="https://oxylabs.io" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm">oxylabs.io</a><br>
+                        <span class="text-neutral-500">Global network with SERP scraping tools.</span>
+                    </li>
+                    <li>
+                        <strong class="text-neutral-900 font-semibold">ScraperAPI</strong> – 
+                        <a href="https://scraperapi.com" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm">scraperapi.com</a><br>
+                        <span class="text-neutral-500">Solves CAPTCHAs, rotates proxies automatically.</span>
+                    </li>
+                    <li>
+                        <strong class="text-neutral-900 font-semibold">ScrapingBee</strong> – 
+                        <a href="https://scrapingbee.com" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm">scrapingbee.com</a><br>
+                        <span class="text-neutral-500">API for JS rendering + proxies + browser automation.</span>
+                    </li>
+                    <li>
+                        <strong class="text-neutral-900 font-semibold">Zyte Smart Proxy Manager</strong> – 
+                        <a href="https://zyte.com" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm">zyte.com</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- n8n Workflows -->
+        <section id="n8n-workflows" class="mb-16 border-t brand-divider pt-12">
+            <h2 class="text-3xl md:text-4xl font-medium text-neutral-900 mb-6 pb-3 border-b-2 border-signal-blue inline-block">
+                n8n Workflows & Automation Nodes
+            </h2>
+            <div class="bg-white border border-neutral-300 rounded-lg p-8 md:p-10 mt-6">
+                <p class="text-neutral-700 mb-6">
+                    Ready-to-use n8n workflow templates for B2B lead automation, sourced from 
+                    <a href="https://github.com/enescingoz/awesome-n8n-templates" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-medium">awesome-n8n-templates</a>.
+                </p>
+
+                <div class="mb-8">
+                    <h3 class="text-2xl md:text-3xl font-medium text-neutral-900 mb-4">📧 Email & Lead Processing</h3>
+                    <ul class="space-y-4 text-neutral-700">
+                        <li>
+                            <strong class="text-neutral-900 font-semibold">Auto-label incoming Gmail messages with AI</strong> – 
+                            Automatically labels incoming Gmail messages using AI. Retrieves message content, suggests labels like Partnership or Inquiry, and assigns them for better organization.
+                            <a href="https://github.com/enescingoz/awesome-n8n-templates/blob/main/Gmail_and_Email_Automation/Auto-label%20incoming%20Gmail%20messages%20with%20AI%20nodes.json" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm ml-2">Template →</a>
+                        </li>
+                        <li>
+                            <strong class="text-neutral-900 font-semibold">Compose reply draft in Gmail with OpenAI Assistant</strong> – 
+                            Generates draft replies in Gmail using OpenAI. Triggers on new emails, extracts content, and creates a suggested reply draft.
+                            <a href="https://github.com/enescingoz/awesome-n8n-templates/blob/main/Gmail_and_Email_Automation/Compose%20reply%20draft%20in%20Gmail%20with%20OpenAI%20Assistant.json" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm ml-2">Template →</a>
+                        </li>
+                        <li>
+                            <strong class="text-neutral-900 font-semibold">A Very Simple "Human in the Loop" Email Response System</strong> – 
+                            Uses IMAP to fetch emails, summarizes content with AI, and drafts professional replies for review before sending.
+                            <a href="https://github.com/enescingoz/awesome-n8n-templates/blob/main/Gmail_and_Email_Automation/A%20Very%20Simple%20_Human%20in%20the%20Loop_%20Email%20Response%20System%20Using%20AI%20and%20IMAP.json" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm ml-2">Template →</a>
+                        </li>
+                        <li>
+                            <strong class="text-neutral-900 font-semibold">Auto Categorise Outlook Emails with AI</strong> – 
+                            Automatically categorizes Outlook emails using AI models. Moves messages to folders and assigns categories based on content.
+                            <a href="https://github.com/enescingoz/awesome-n8n-templates/blob/main/Gmail_and_Email_Automation/Auto%20Categorise%20Outlook%20Emails%20with%20AI.json" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm ml-2">Template →</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-2xl md:text-3xl font-medium text-neutral-900 mb-4">📊 Data Management & Enrichment</h3>
+                    <ul class="space-y-4 text-neutral-700">
+                        <li>
+                            <strong class="text-neutral-900 font-semibold">Qualify new leads in Google Sheets via OpenAI's GPT-4</strong> – 
+                            Uses OpenAI's GPT-4 to analyze and qualify new leads entered into a Google Sheet, helping sales teams prioritize their outreach.
+                            <a href="https://github.com/enescingoz/awesome-n8n-templates/blob/main/Google_Drive_and_Google_Sheets/Qualify%20new%20leads%20in%20Google%20Sheets%20via%20OpenAI_s%20GPT-4.json" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm ml-2">Template →</a>
+                        </li>
+                        <li>
+                            <strong class="text-neutral-900 font-semibold">Chat with a Google Sheet using AI</strong> – 
+                            Allows users to interact with and query data within a Google Sheet using natural language via an AI model.
+                            <a href="https://github.com/enescingoz/awesome-n8n-templates/blob/main/Google_Drive_and_Google_Sheets/Chat%20with%20a%20Google%20Sheet%20using%20AI.json" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm ml-2">Template →</a>
+                        </li>
+                        <li>
+                            <strong class="text-neutral-900 font-semibold">Summarize Google Sheets form feedback via OpenAI's GPT-4</strong> – 
+                            Summarizes feedback collected through Google Forms and stored in Google Sheets using OpenAI's GPT-4.
+                            <a href="https://github.com/enescingoz/awesome-n8n-templates/blob/main/Google_Drive_and_Google_Sheets/Summarize%20Google%20Sheets%20form%20feedback%20via%20OpenAI_s%20GPT-4.json" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm ml-2">Template →</a>
+                        </li>
+                        <li>
+                            <strong class="text-neutral-900 font-semibold">Chat with Postgresql Database</strong> – 
+                            Enables an AI assistant to chat with a PostgreSQL database, allowing users to query and retrieve data using natural language.
+                            <a href="https://github.com/enescingoz/awesome-n8n-templates/blob/main/Database_and_Storage/Chat%20with%20Postgresql%20Database.json" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm ml-2">Template →</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-2xl md:text-3xl font-medium text-neutral-900 mb-4">🤖 AI-Powered Lead Processing</h3>
+                    <ul class="space-y-4 text-neutral-700">
+                        <li>
+                            <strong class="text-neutral-900 font-semibold">AI-Driven Lead Management and Inquiry Automation</strong> – 
+                            Lead management automation workflow with ERPNext & n8n integration.
+                            <a href="https://github.com/enescingoz/awesome-n8n-templates/blob/main/OpenAI_and_LLMs/AI-Driven%20Lead%20Management%20and%20Inquiry%20Automation%20with%20ERPNext%20&%20n8n.json" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm ml-2">Template →</a>
+                        </li>
+                        <li>
+                            <strong class="text-neutral-900 font-semibold">AI Data Extraction with Dynamic Prompts and Airtable</strong> – 
+                            AI-driven data extraction with Airtable integration for structured lead data.
+                            <a href="https://github.com/enescingoz/awesome-n8n-templates/blob/main/OpenAI_and_LLMs/AI%20Data%20Extraction%20with%20Dynamic%20Prompts%20and%20Airtable.json" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm ml-2">Template →</a>
+                        </li>
+                        <li>
+                            <strong class="text-neutral-900 font-semibold">AI Agent to chat with Airtable and analyze data</strong> – 
+                            Creates an AI agent that can chat with Airtable, analyze data, and perform queries based on user requests.
+                            <a href="https://github.com/enescingoz/awesome-n8n-templates/blob/main/Airtable/AI%20Agent%20to%20chat%20with%20Airtable%20and%20analyze%20data.json" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm ml-2">Template →</a>
+                        </li>
+                        <li>
+                            <strong class="text-neutral-900 font-semibold">AI agent that can scrape webpages</strong> – 
+                            AI agent for web scraping tasks with intelligent content extraction.
+                            <a href="https://github.com/enescingoz/awesome-n8n-templates/blob/main/OpenAI_and_LLMs/AI%20agent%20that%20can%20scrape%20webpages.json" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm ml-2">Template →</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-2xl md:text-3xl font-medium text-neutral-900 mb-4">📝 Forms & Lead Capture</h3>
+                    <ul class="space-y-4 text-neutral-700">
+                        <li>
+                            <strong class="text-neutral-900 font-semibold">Conversational Interviews with AI Agents and n8n Forms</strong> – 
+                            Implements AI-powered conversational interviews using n8n Forms for interactive data collection.
+                            <a href="https://github.com/enescingoz/awesome-n8n-templates/blob/main/Forms_and_Surveys/Conversational%20Interviews%20with%20AI%20Agents%20and%20n8n%20Forms.json" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm ml-2">Template →</a>
+                        </li>
+                        <li>
+                            <strong class="text-neutral-900 font-semibold">Qualifying Appointment Requests with AI & n8n Forms</strong> – 
+                            Uses AI to qualify and process appointment requests submitted through n8n Forms.
+                            <a href="https://github.com/enescingoz/awesome-n8n-templates/blob/main/Forms_and_Surveys/Qualifying%20Appointment%20Requests%20with%20AI%20&%20n8n%20Forms.json" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm ml-2">Template →</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-2xl md:text-3xl font-medium text-neutral-900 mb-4">💬 Communication & Notifications</h3>
+                    <ul class="space-y-4 text-neutral-700">
+                        <li>
+                            <strong class="text-neutral-900 font-semibold">Enrich Pipedrive's Organization Data with OpenAI GPT-4o & Notify it in Slack</strong> – 
+                            Enriches Pipedrive organization data by scraping website content, using OpenAI GPT-4o to generate a summary, and notifying a Slack channel.
+                            <a href="https://github.com/enescingoz/awesome-n8n-templates/blob/main/Slack/Enrich%20Pipedrive_s%20Organization%20Data%20with%20OpenAI%20GPT-4o%20&%20Notify%20it%20in%20Slack.json" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm ml-2">Template →</a>
+                        </li>
+                        <li>
+                            <strong class="text-neutral-900 font-semibold">Customer Support Channel and Ticketing System with Slack and Linear</strong> – 
+                            Automates customer support by querying Slack for messages with a ticket emoji, deciding if a new Linear ticket is needed.
+                            <a href="https://github.com/enescingoz/awesome-n8n-templates/blob/main/Slack/Customer%20Support%20Channel%20and%20Ticketing%20System%20with%20Slack%20and%20Linear.json" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm ml-2">Template →</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-2xl md:text-3xl font-medium text-neutral-900 mb-4">🔍 Research & Data Analysis</h3>
+                    <ul class="space-y-4 text-neutral-700">
+                        <li>
+                            <strong class="text-neutral-900 font-semibold">Ultimate Scraper Workflow for n8n</strong> – 
+                            A comprehensive scraping workflow for n8n to extract data from various sources.
+                            <a href="https://github.com/enescingoz/awesome-n8n-templates/blob/main/AI_Research_RAG_and_Data_Analysis/Ultimate%20Scraper%20Workflow%20for%20n8n.json" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm ml-2">Template →</a>
+                        </li>
+                        <li>
+                            <strong class="text-neutral-900 font-semibold">Scrape and summarize webpages with AI</strong> – 
+                            Scrapes and summarizes content from webpages using AI.
+                            <a href="https://github.com/enescingoz/awesome-n8n-templates/blob/main/AI_Research_RAG_and_Data_Analysis/Scrape%20and%20summarize%20webpages%20with%20AI.json" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm ml-2">Template →</a>
+                        </li>
+                        <li>
+                            <strong class="text-neutral-900 font-semibold">Automate Competitor Research with Exa.ai, Notion and AI Agents</strong> – 
+                            Builds a competitor research agent using Exa.ai to find similar companies. AI agents then scour the internet for company overviews, product offerings, and customer reviews.
+                            <a href="https://github.com/enescingoz/awesome-n8n-templates/blob/main/Notion/Automate%20Competitor%20Research%20with%20Exa.ai,%20Notion%20and%20AI%20Agents.json" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm ml-2">Template →</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-2xl md:text-3xl font-medium text-neutral-900 mb-4">🔌 Popular n8n Community Nodes</h3>
+                    <p class="text-neutral-700 mb-6">Essential community nodes for B2B lead automation, ranked by monthly downloads.</p>
+
+                    <div class="mb-6">
+                        <h4 class="text-xl font-medium text-neutral-900 mb-3">Browser Automation & Web Scraping</h4>
+                        <ul class="space-y-3 text-neutral-700">
+                            <li>
+                                <strong class="text-neutral-900 font-semibold">n8n-nodes-serpapi</strong> (#10) – 
+                                Connects to SerpApi API for search engine results.
+                                <a href="https://www.npmjs.com/package/n8n-nodes-serpapi" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm ml-2">npm →</a>
+                            </li>
+                            <li>
+                                <strong class="text-neutral-900 font-semibold">n8n-nodes-firecrawl-scraper</strong> (#14) – 
+                                Firecrawl web scraper integration.
+                                <a href="https://www.npmjs.com/package/n8n-nodes-firecrawl-scraper" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm ml-2">npm →</a>
+                            </li>
+                            <li>
+                                <strong class="text-neutral-900 font-semibold">n8n-nodes-playwright</strong> (#27) – 
+                                Integration with Playwright for browser automation.
+                                <a href="https://www.npmjs.com/package/n8n-nodes-playwright" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm ml-2">npm →</a>
+                            </li>
+                            <li>
+                                <strong class="text-neutral-900 font-semibold">n8n-nodes-puppeteer</strong> (#46) – 
+                                Automate browser actions using Puppeteer.
+                                <a href="https://www.npmjs.com/package/n8n-nodes-puppeteer" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm ml-2">npm →</a>
+                            </li>
+                            <li>
+                                <strong class="text-neutral-900 font-semibold">@brightdata/n8n-nodes-brightdata</strong> (#80) – 
+                                Bright Data service for scraping purposes.
+                                <a href="https://www.npmjs.com/package/@brightdata/n8n-nodes-brightdata" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm ml-2">npm →</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-6">
+                        <h4 class="text-xl font-medium text-neutral-900 mb-3">Communication & Messaging</h4>
+                        <ul class="space-y-3 text-neutral-700">
+                            <li>
+                                <strong class="text-neutral-900 font-semibold">n8n-nodes-evolution-api</strong> (#1) – 
+                                WhatsApp channel hub integration.
+                                <a href="https://www.npmjs.com/package/n8n-nodes-evolution-api" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm ml-2">npm →</a>
+                            </li>
+                            <li>
+                                <strong class="text-neutral-900 font-semibold">n8n-nodes-chatwoot</strong> (#7) – 
+                                ChatWoot integration for customer support.
+                                <a href="https://www.npmjs.com/package/n8n-nodes-chatwoot" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm ml-2">npm →</a>
+                            </li>
+                            <li>
+                                <strong class="text-neutral-900 font-semibold">n8n-nodes-imap</strong> (#33) – 
+                                Connect to IMAP server and retrieve emails.
+                                <a href="https://www.npmjs.com/package/n8n-nodes-imap" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm ml-2">npm →</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-6">
+                        <h4 class="text-xl font-medium text-neutral-900 mb-3">AI, LLM & Voice</h4>
+                        <ul class="space-y-3 text-neutral-700">
+                            <li>
+                                <strong class="text-neutral-900 font-semibold">n8n-nodes-mcp</strong> (#2) – 
+                                Provides MCP (Model Context Protocol) nodes for n8n.
+                                <a href="https://www.npmjs.com/package/n8n-nodes-mcp" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm ml-2">npm →</a>
+                            </li>
+                            <li>
+                                <strong class="text-neutral-900 font-semibold">n8n-nodes-deepseek</strong> (#24) – 
+                                DeepSeek AI node similar to OpenAI.
+                                <a href="https://www.npmjs.com/package/n8n-nodes-deepseek" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm ml-2">npm →</a>
+                            </li>
+                            <li>
+                                <strong class="text-neutral-900 font-semibold">@watzon/n8n-nodes-perplexity</strong> (#37) – 
+                                Interact with the Perplexity AI API.
+                                <a href="https://www.npmjs.com/package/@watzon/n8n-nodes-perplexity" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm ml-2">npm →</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-6">
+                        <h4 class="text-xl font-medium text-neutral-900 mb-3">API & Cloud Integrations</h4>
+                        <ul class="space-y-3 text-neutral-700">
+                            <li>
+                                <strong class="text-neutral-900 font-semibold">@apify/n8n-nodes-apify</strong> (#11) – 
+                                Connects to Apify API for web scraping and automation.
+                                <a href="https://www.npmjs.com/package/@apify/n8n-nodes-apify" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm ml-2">npm →</a>
+                            </li>
+                            <li>
+                                <strong class="text-neutral-900 font-semibold">n8n-nodes-linked-api</strong> (#22) – 
+                                LinkedIn automation and data retrieval.
+                                <a href="https://www.npmjs.com/package/n8n-nodes-linked-api" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm ml-2">npm →</a>
+                            </li>
+                            <li>
+                                <strong class="text-neutral-900 font-semibold">n8n-nodes-qdrant</strong> (#32) – 
+                                Connects to Qdrant vector search engine for RAG workflows.
+                                <a href="https://www.npmjs.com/package/n8n-nodes-qdrant" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm ml-2">npm →</a>
+                            </li>
+                            <li>
+                                <strong class="text-neutral-900 font-semibold">n8n-nodes-close-crm</strong> (#88) – 
+                                Close CRM integration for automating leads and opportunities.
+                                <a href="https://www.npmjs.com/package/n8n-nodes-close-crm" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm ml-2">npm →</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="border-t border-neutral-300 pt-6 mt-8">
+                    <h3 class="text-2xl md:text-3xl font-medium text-neutral-900 mb-4">📚 Resources</h3>
+                    <ul class="space-y-3 text-neutral-700">
+                        <li>
+                            <strong class="text-neutral-900 font-semibold">Awesome n8n Templates Repository</strong> – 
+                            <a href="https://github.com/enescingoz/awesome-n8n-templates" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm">github.com/enescingoz/awesome-n8n-templates</a>
+                        </li>
+                        <li>
+                            <strong class="text-neutral-900 font-semibold">Top 100 n8n Community Nodes</strong> – 
+                            <a href="https://github.com/pixeljets/awesome-n8n" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm">github.com/pixeljets/awesome-n8n</a>
+                        </li>
+                        <li>
+                            <strong class="text-neutral-900 font-semibold">Official n8n Documentation</strong> – 
+                            <a href="https://docs.n8n.io" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm">docs.n8n.io</a>
+                        </li>
+                        <li>
+                            <strong class="text-neutral-900 font-semibold">n8n Community Workflows</strong> – 
+                            <a href="https://n8n.io/workflows" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm">n8n.io/workflows</a>
+                        </li>
+                        <li>
+                            <strong class="text-neutral-900 font-semibold">Installing Community Nodes</strong> – 
+                            <a href="https://docs.n8n.io/integrations/community-nodes/installation/" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors font-mono text-sm">docs.n8n.io/integrations/community-nodes/installation</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Example Pipeline -->
+        <section id="example-pipeline" class="mb-16 border-t brand-divider pt-12">
+            <h2 class="text-3xl md:text-4xl font-medium text-neutral-900 mb-6 pb-3 border-b-2 border-signal-blue inline-block">
+                Example B2B Lead Pipeline
+            </h2>
+            <div class="bg-white border border-neutral-300 rounded-lg p-8 md:p-10 mt-6">
+                <p class="text-neutral-700 mb-6">A real-world, production-ready pipeline:</p>
+                <ol class="list-decimal list-inside space-y-3 text-neutral-700 ml-4">
+                    <li>Scrape → Playwright / Crawlee</li>
+                    <li>Store Raw Data → n8n / DB / Sheets</li>
+                    <li>Enrich Lead → Clearbit, Apollo, Clay</li>
+                    <li>Verify Email → NeverBounce</li>
+                    <li>Clean & Deduplicate → CRM Query / Hash Matching</li>
+                    <li>Export to CRM → HubSpot / Salesforce / Pipedrive</li>
+                    <li>Trigger Outreach → Deal Scale / GHL / Apollo</li>
+                </ol>
+                <p class="text-neutral-700 mt-6">
+                    This is the exact architecture Lead Orchestra uses for <strong class="text-neutral-900 font-semibold">daily B2B lead generation</strong>.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contributing -->
+        <section id="contributing" class="mb-16 border-t brand-divider pt-12">
+            <h2 class="text-3xl md:text-4xl font-medium text-neutral-900 mb-6 pb-3 border-b-2 border-signal-blue inline-block">
+                Contributing
+            </h2>
+            <div class="bg-white border border-neutral-300 rounded-lg p-8 md:p-10 mt-6">
+                <p class="text-neutral-700 mb-4">We welcome contributions:</p>
+                <ol class="list-decimal list-inside space-y-2 text-neutral-700 ml-4 mb-6">
+                    <li>Fork this repo</li>
+                    <li>Add your tool/resource</li>
+                    <li>Submit a PR</li>
+                    <li>Follow formatting, keep quality high</li>
+                </ol>
+                <p class="text-neutral-700">
+                    See <a href="https://github.com/Lead-Orchestra/awesome-b2b-leads/blob/master/CONTRIBUTING.md" class="text-signal-blue hover:text-automation-teal transition-colors font-medium">CONTRIBUTING.md</a> for details.
+                </p>
+            </div>
+        </section>
+
+        <!-- License -->
+        <section id="license" class="mb-16 border-t brand-divider pt-12">
+            <h2 class="text-3xl md:text-4xl font-medium text-neutral-900 mb-6 pb-3 border-b-2 border-signal-blue inline-block">
+                License
+            </h2>
+            <div class="bg-white border border-neutral-300 rounded-lg p-8 md:p-10 mt-6">
+                <p class="text-neutral-700">MIT License — free to use and distribute.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-orch-black text-white mt-20">
+        <div class="max-w-7xl mx-auto px-6 py-12 text-center">
+            <p class="text-neutral-300 mb-2">
+                Curated by <strong class="font-semibold text-white">Lead Orchestra</strong> | 
+                <a href="https://leadorchestra.com" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors underline">
+                    leadorchestra.com
+                </a>
+            </p>
+            <p>
+                <a href="https://github.com/Lead-Orchestra/awesome-b2b-leads" target="_blank" rel="noopener noreferrer" class="text-signal-blue hover:text-automation-teal transition-colors underline">
+                    View on GitHub
+                </a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,36 @@
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareSourceCode",
+  "name": "Lead Orchestra – Awesome Web Scraping for B2B Leads",
+  "description": "A curated collection of the best web scraping frameworks, lead enrichment APIs, proxy networks, and automation workflows for B2B lead generation.",
+  "url": "https://leadorchestra.com",
+  "codeRepository": "https://github.com/Lead-Orchestra/awesome-b2b-leads",
+  "programmingLanguage": ["Python", "JavaScript", "TypeScript"],
+  "keywords": [
+    "web scraping",
+    "b2b lead generation",
+    "lead enrichment",
+    "automation",
+    "playwright",
+    "puppeteer",
+    "scrapy",
+    "proxies",
+    "n8n workflows",
+    "browser automation",
+    "data extraction",
+    "lead verification",
+    "CRM automation",
+    "sales prospecting"
+  ],
+  "creator": {
+    "@type": "Organization",
+    "name": "Lead Orchestra",
+    "url": "https://leadorchestra.com",
+    "logo": "https://raw.githubusercontent.com/Lead-Orchestra/awesome-b2b-leads/main/assets/logo.svg"
+  },
+  "license": "https://github.com/Lead-Orchestra/awesome-b2b-leads/blob/master/LICENSE",
+  "datePublished": "2025-01-27",
+  "dateModified": "2025-01-27",
+  "inLanguage": "en-US"
+}
+

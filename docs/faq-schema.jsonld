@@ -1,0 +1,71 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Lead Orchestra?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lead Orchestra is a complete B2B lead scraping & automation platform that orchestrates web scraping at scale, undetectable browser automation, data enrichment (email, company, social, intent), lead verification & deduplication, n8n / Make.com automation workflows, and CRM export (HubSpot, Salesforce, Pipedrive, GoHighLevel, Deal Scale)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What tools are included in this curated list?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This list includes web scraping frameworks (Scrapy, BeautifulSoup, Crawlee, Cheerio), headless browser tools (Playwright, Puppeteer, Selenium), B2B lead enrichment APIs (Clearbit, Apollo.io, ZoomInfo, Clay), email verification services (NeverBounce, ZeroBounce, Kickbox), proxy & anti-bot providers (Bright Data, Oxylabs, ScraperAPI), and n8n workflow automation nodes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I use these tools for B2B lead generation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The typical pipeline involves: 1) Scraping with Playwright or Crawlee, 2) Storing raw data in n8n/DB/Sheets, 3) Enriching leads with Clearbit/Apollo/Clay, 4) Verifying emails with NeverBounce, 5) Cleaning & deduplicating, 6) Exporting to CRM (HubSpot/Salesforce/Pipedrive), and 7) Triggering outreach via Deal Scale/GHL/Apollo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this repository free to use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, this repository is open-source and free to use under the MIT License. All tools and resources listed are curated recommendations for B2B lead generation workflows."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I contribute to this list?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Contributions are welcome! Fork the repository, add your tool or resource following the formatting guidelines, and submit a pull request. See CONTRIBUTING.md for detailed instructions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between Lead Orchestra and Deal Scale?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lead Orchestra focuses on the data pipeline: scraping, data acquisition, normalization, and export. Deal Scale handles enrichment, AI scoring, outreach, and CRM sync. Together they form a complete lead generation and activation system."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which browser automation tool is best for anti-bot resistance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Playwright is recommended for the best anti-bot resistance as it supports multi-browser automation (Chromium, WebKit, Firefox) with advanced stealth features. Puppeteer is also excellent for Chrome-only automation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need proxies for web scraping?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For large-scale scraping, proxies are essential to avoid IP blocks. Recommended providers include Bright Data (residential & mobile proxies), Oxylabs (global network), ScraperAPI (automatic CAPTCHA solving), and ScrapingBee (JS rendering + proxies)."
+      }
+    }
+  ]
+}
+

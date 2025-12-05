@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Placeholder SVG Logo - Replace with actual Lead Orchestra logo -->
+  <rect width="200" height="200" fill="#2563eb" rx="20"/>
+  <text x="100" y="120" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle">LO</text>
+  <text x="100" y="150" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Lead Orchestra</text>
+</svg>
