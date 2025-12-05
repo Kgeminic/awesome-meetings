@@ -1,6 +1,3 @@
-# ⭐ **README.md (Optimized for SEO + Markdown Compatible)**
-
-```markdown
 # Awesome Web Scraping for B2B Leads  
 Curated by **Lead Orchestra** — https://leadorchestra.com  
 
@@ -308,7 +305,4 @@ This README is intentionally optimized for ranking in searches related to:
 - **GitHub Organization:** https://github.com/Lead-Orchestra
 - **This Repository:** https://github.com/Lead-Orchestra/awesome-b2b-leads
 - **GitHub Pages:** https://lead-orchestra.github.io/awesome-b2b-leads/
-
-```
-
 
