@@ -4,68 +4,75 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is Lead Orchestra?",
+      "name": "What is Meeting Maestro?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Lead Orchestra is a complete B2B lead scraping & automation platform that orchestrates web scraping at scale, undetectable browser automation, data enrichment (email, company, social, intent), lead verification & deduplication, n8n / Make.com automation workflows, and CRM export (HubSpot, Salesforce, Pipedrive, GoHighLevel, Deal Scale)."
+        "text": "Meeting Maestro is an AI-powered meeting automation platform that captures, transcribes, summarizes, and organizes your meetings automatically. It turns conversations into action items, agendas, task lists, CRM notes, and follow-up messages—ensuring nothing gets lost and your team stays aligned."
       }
     },
     {
       "@type": "Question",
-      "name": "What tools are included in this curated list?",
+      "name": "How does Meeting Maestro work?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "This list includes web scraping frameworks (Scrapy, BeautifulSoup, Crawlee, Cheerio), headless browser tools (Playwright, Puppeteer, Selenium), B2B lead enrichment APIs (Clearbit, Apollo.io, ZoomInfo, Clay), email verification services (NeverBounce, ZeroBounce, Kickbox), proxy & anti-bot providers (Bright Data, Oxylabs, ScraperAPI), and n8n workflow automation nodes."
+        "text": "Meeting Maestro joins your meetings (Zoom, Google Meet, Teams) or processes uploaded recordings. It generates accurate transcripts, real-time insights, structured summaries, next steps, tasks, deadlines, and CRM-ready notes. You can also export everything to tools like Notion, HubSpot, Salesforce, ClickUp, Asana, and Slack."
       }
     },
     {
       "@type": "Question",
-      "name": "How do I use these tools for B2B lead generation?",
+      "name": "Who is Meeting Maestro for?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The typical pipeline involves: 1) Scraping with Playwright or Crawlee, 2) Storing raw data in n8n/DB/Sheets, 3) Enriching leads with Clearbit/Apollo/Clay, 4) Verifying emails with NeverBounce, 5) Cleaning & deduplicating, 6) Exporting to CRM (HubSpot/Salesforce/Pipedrive), and 7) Triggering outreach via Deal Scale/GHL/Apollo."
+        "text": "Meeting Maestro is built for founders, busy professionals, operators, sales teams, agencies, and project managers who want to eliminate manual note-taking and create automated follow-ups, agendas, and workflows across their entire organization."
       }
     },
     {
       "@type": "Question",
-      "name": "Is this repository free to use?",
+      "name": "Does Meeting Maestro support AI-generated follow-ups?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, this repository is open-source and free to use under the MIT License. All tools and resources listed are curated recommendations for B2B lead generation workflows."
+        "text": "Yes. Meeting Maestro can create personalized follow-up emails, Slack messages, recap documents, and CRM entries using your tone, templates, and preferences. All follow-ups are automatically synced to your workspace or sent directly through your preferred platform."
       }
     },
     {
       "@type": "Question",
-      "name": "How can I contribute to this list?",
+      "name": "Can Meeting Maestro integrate with CRMs and task managers?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Contributions are welcome! Fork the repository, add your tool or resource following the formatting guidelines, and submit a pull request. See CONTRIBUTING.md for detailed instructions."
+        "text": "Yes. Meeting Maestro exports structured action items, summaries, and notes directly into HubSpot, Salesforce, Pipedrive, Notion, ClickUp, Asana, Trello, Linear, Slack, and more. Custom integrations can be automated using n8n, Make.com, or Zapier."
       }
     },
     {
       "@type": "Question",
-      "name": "What is the difference between Lead Orchestra and Deal Scale?",
+      "name": "Is Meeting Maestro secure and compliant?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Lead Orchestra focuses on the data pipeline: scraping, data acquisition, normalization, and export. Deal Scale handles enrichment, AI scoring, outreach, and CRM sync. Together they form a complete lead generation and activation system."
+        "text": "Meeting Maestro uses enterprise-grade encryption, secure storage, and strict access controls. Recordings and transcripts are never shared or used for training without permission. The platform follows modern privacy standards including GDPR and SOC-2 principles."
       }
     },
     {
       "@type": "Question",
-      "name": "Which browser automation tool is best for anti-bot resistance?",
+      "name": "Can I use Meeting Maestro without adding a bot to my live meetings?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Playwright is recommended for the best anti-bot resistance as it supports multi-browser automation (Chromium, WebKit, Firefox) with advanced stealth features. Puppeteer is also excellent for Chrome-only automation."
+        "text": "Yes. You can upload meeting recordings manually or connect auto-upload from Zoom Cloud, Google Drive, Dropbox, or Loom. Many users prefer this for private or confidential meetings."
       }
     },
     {
       "@type": "Question",
-      "name": "Do I need proxies for web scraping?",
+      "name": "Is Meeting Maestro free to use?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "For large-scale scraping, proxies are essential to avoid IP blocks. Recommended providers include Bright Data (residential & mobile proxies), Oxylabs (global network), ScraperAPI (automatic CAPTCHA solving), and ScrapingBee (JS rendering + proxies)."
+        "text": "Meeting Maestro offers a free tier with limited meeting credits. Paid plans unlock unlimited summaries, AI follow-ups, CRM sync, team workspaces, automation workflows, and advanced analytics."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I contribute ideas or feature requests?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can submit feature requests through the in-app feedback portal or via the Meeting Maestro community. The team actively prioritizes improvements based on user impact and roadmap alignment."
       }
     }
   ]
 }
-
