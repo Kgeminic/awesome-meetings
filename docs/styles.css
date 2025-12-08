@@ -5,25 +5,37 @@
     box-sizing: border-box;
 }
 
+/* --------------------------------------------------
+   Meeting Maestro Brand Variables
+-------------------------------------------------- */
 :root {
-    --primary-color: #2563eb;
-    --secondary-color: #1e40af;
-    --text-color: #1f2937;
-    --text-light: #6b7280;
+    --primary-color: #2563eb;         /* Maestro Blue */
+    --secondary-color: #1e40af;       /* Deep Maestro Blue */
+    --accent-color: #a855f7;          /* Neon Purple Accent */
+    --accent-dark: #7c3aed;
+
+    --text-color: #1f2937;            /* Slate 800 */
+    --text-light: #6b7280;            /* Slate 500 */
     --bg-color: #ffffff;
-    --bg-light: #f9fafb;
-    --border-color: #e5e7eb;
+    --bg-light: #f9fafb;              /* Light Gray Background */
+    --bg-soft: #f3f4f6;               /* Soft Neutral */
+
+    --border-color: #e5e7eb;          /* Neutral Border */
     --link-color: #2563eb;
     --link-hover: #1e40af;
-    --spacing: 1.5rem;
+
+    --radius: 10px;                   /* Slightly more modern rounding */
+    --spacing: 1.75rem;               /* Improved rhythm */
     --max-width: 1200px;
 }
 
+/* Base Typography */
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    line-height: 1.6;
+    line-height: 1.65;
     color: var(--text-color);
     background-color: var(--bg-color);
+    -webkit-font-smoothing: antialiased;
 }
 
 .container {
@@ -32,23 +44,27 @@ body {
     padding: 0 var(--spacing);
 }
 
-/* Header */
+/* --------------------------------------------------
+   Header
+-------------------------------------------------- */
 header {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-dark));
     color: white;
-    padding: 3rem 0;
-    margin-bottom: 3rem;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 3.25rem 0;
+    margin-bottom: 3.25rem;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.12);
+    border-bottom: 4px solid var(--accent-color);
 }
 
 header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-    font-weight: 700;
+    font-size: 2.75rem;
+    margin-bottom: 0.65rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
 }
 
 .subtitle {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     opacity: 0.95;
 }
 
@@ -61,17 +77,25 @@ header h1 {
     opacity: 0.8;
 }
 
-/* Main Content */
+/* --------------------------------------------------
+   Main Content
+-------------------------------------------------- */
 main {
     padding-bottom: 3rem;
 }
 
 section {
     margin-bottom: 3rem;
-    padding: 2rem;
+    padding: 2rem 2rem;
     background: var(--bg-light);
-    border-radius: 8px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: var(--radius);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--border-color);
+    transition: transform 0.2s ease;
+}
+
+section:hover {
+    transform: translateY(-2px);
 }
 
 .intro {
@@ -80,59 +104,66 @@ section {
 }
 
 .lead {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     color: var(--text-color);
-    line-height: 1.8;
+    line-height: 1.85;
 }
 
+/* Headings */
 h2 {
-    font-size: 2rem;
+    font-size: 2.1rem;
     margin-bottom: 1rem;
     color: var(--text-color);
     border-bottom: 3px solid var(--primary-color);
     padding-bottom: 0.5rem;
+    font-weight: 700;
 }
 
 h3 {
-    font-size: 1.5rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0.75rem;
-    color: var(--text-color);
+    font-size: 1.55rem;
+    margin-top: 1.75rem;
+    margin-bottom: 0.85rem;
+    color: var(--secondary-color);
 }
 
 p {
-    margin-bottom: 1rem;
-    color: var(--text-color);
+    margin-bottom: 1.1rem;
 }
 
+/* Lists */
 ul, ol {
     margin-left: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
 }
 
 li {
-    margin-bottom: 0.5rem;
-    line-height: 1.7;
+    margin-bottom: 0.6rem;
+    line-height: 1.75;
 }
 
-/* Links */
+/* --------------------------------------------------
+   Links
+-------------------------------------------------- */
 a {
     color: var(--link-color);
     text-decoration: none;
-    transition: color 0.2s;
+    transition: color 0.2s, opacity 0.2s;
 }
 
 a:hover {
     color: var(--link-hover);
-    text-decoration: underline;
+    opacity: 0.9;
 }
 
-/* Table of Contents */
+/* --------------------------------------------------
+   Table of Contents
+-------------------------------------------------- */
 .toc {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 6px;
-    border-left: 4px solid var(--primary-color);
+    background: #ffffff;
+    padding: 1.75rem;
+    border-radius: var(--radius);
+    border-left: 5px solid var(--accent-color);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
 }
 
 .toc ul {
@@ -141,40 +172,45 @@ a:hover {
 }
 
 .toc li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.65rem;
 }
 
 .toc a {
     color: var(--text-color);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .toc a:hover {
-    color: var(--primary-color);
+    color: var(--accent-color);
 }
 
-/* Code blocks */
+/* --------------------------------------------------
+   Code blocks
+-------------------------------------------------- */
 pre, code {
-    background: #f4f4f4;
-    padding: 0.2rem 0.4rem;
-    border-radius: 4px;
+    background: var(--bg-soft);
+    padding: 0.3rem 0.5rem;
+    border-radius: 6px;
     font-family: 'Courier New', monospace;
-    font-size: 0.9em;
+    font-size: 0.92em;
 }
 
 pre {
-    padding: 1rem;
+    padding: 1.25rem;
     overflow-x: auto;
-    margin: 1rem 0;
+    margin: 1.25rem 0;
 }
 
-/* Footer */
+/* --------------------------------------------------
+   Footer
+-------------------------------------------------- */
 footer {
-    background: var(--text-color);
+    background: var(--secondary-color);
     color: white;
     padding: 2rem 0;
     margin-top: 4rem;
     text-align: center;
+    border-top: 4px solid var(--accent-color);
 }
 
 footer a {
@@ -183,46 +219,51 @@ footer a {
 }
 
 footer a:hover {
-    opacity: 0.8;
+    opacity: 0.85;
 }
 
-/* Responsive Design */
+/* --------------------------------------------------
+   Responsive Design
+-------------------------------------------------- */
 @media (max-width: 768px) {
     header h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
-    
+
     .subtitle {
         font-size: 1rem;
     }
-    
+
     section {
         padding: 1.5rem;
     }
-    
+
     h2 {
-        font-size: 1.75rem;
+        font-size: 1.8rem;
     }
-    
+
     h3 {
-        font-size: 1.25rem;
+        font-size: 1.35rem;
     }
-    
+
     .container {
         padding: 0 1rem;
     }
 }
 
-/* Print Styles */
+/* --------------------------------------------------
+   Print Styles
+-------------------------------------------------- */
 @media print {
     header {
-        background: white;
-        color: black;
+        background: white !important;
+        color: black !important;
+        box-shadow: none !important;
+        border-bottom: none !important;
     }
-    
+
     section {
-        box-shadow: none;
-        border: 1px solid var(--border-color);
+        box-shadow: none !important;
+        border: 1px solid var(--border-color) !important;
     }
 }
-
