@@ -1,24 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- Main Site -->
   <url>
-      <loc>https://leadorchestra.com</loc>
+      <loc>https://meetingmaestro.ai/</loc>
       <priority>1.0</priority>
       <changefreq>weekly</changefreq>
       <lastmod>2025-01-27</lastmod>
   </url>
 
+  <!-- Awesome Meetings Website -->
   <url>
-      <loc>https://lead-orchestra.github.io/awesome-b2b-leads/</loc>
+      <loc>https://meetingmaestro.github.io/awesome-meetings/</loc>
       <priority>0.9</priority>
       <changefreq>weekly</changefreq>
       <lastmod>2025-01-27</lastmod>
   </url>
 
+  <!-- Awesome Meetings GitHub Repo -->
   <url>
-      <loc>https://github.com/Lead-Orchestra/awesome-b2b-leads</loc>
+      <loc>https://github.com/MeetingMaestro/awesome-meetings</loc>
       <priority>0.9</priority>
       <changefreq>daily</changefreq>
+      <lastmod>2025-01-27</lastmod>
+  </url>
+
+  <!-- Product Docs (if applicable) -->
+  <url>
+      <loc>https://meetingmaestro.ai/docs</loc>
+      <priority>0.7</priority>
+      <changefreq>weekly</changefreq>
+      <lastmod>2025-01-27</lastmod>
+  </url>
+
+  <!-- Blog / Knowledge Base (optional future SEO pages) -->
+  <url>
+      <loc>https://meetingmaestro.ai/blog</loc>
+      <priority>0.6</priority>
+      <changefreq>weekly</changefreq>
       <lastmod>2025-01-27</lastmod>
   </url>
 
