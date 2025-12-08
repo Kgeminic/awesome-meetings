@@ -140,12 +140,3 @@ Feel free to open an issue or PR — I’d love to build this into a living reso
 * **Modern open-source README style** — short intro, call to action, clean lists, badges, and transparent license (makes it feel professional). ([DEV Community][5])
 
 ---
-
-If you like — I can **generate a fully markdown-formatted README** (with badges, TOC, emoji & styling) that you can copy/paste directly into your repo.
-Do you want me to build that for you now?
-
-[1]: https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/?utm_source=chatgpt.com "How to Write a Good README File for Your GitHub Project"
-[2]: https://www.freecodecamp.org/news/how-to-structure-your-readme-file/?utm_source=chatgpt.com "How to Structure Your README File"
-[3]: https://www.infrasity.com/blog/github-seo?utm_source=chatgpt.com "The Ultimate Guide to GitHub SEO for 2025"
-[4]: https://dev.to/github/how-to-create-the-perfect-readme-for-your-open-source-project-1k69?utm_source=chatgpt.com "How to Create the Perfect README for Your Open Source ..."
-[5]: https://dev.to/pwd9000/github-repository-best-practices-23ck?utm_source=chatgpt.com "GitHub Repository Best Practices"
