@@ -63,6 +63,7 @@ Tools ideal for remote teams, async work, or distributed cultures (many free or 
 | [QuickRetro](https://quickretro.app/)                       | 🆓             | Open-source & self-hosted retrospectives with modern UI         |
 | [Parabol](https://www.parabol.co)                           | 💰 / Free Plan | Powerful retrospective + sprint-planning tool with integrations |
 | [EasyRetro](https://easyretro.io)                           | 💰 / Free Tier | Board + voting + export for remote retrospectives               |
+| [AI Group Call](https://aigroupcall.app) | iOS + Android app | An AI council you can talk to: a group voice call where agents riff with each other, answer when named, and yield when you speak. |
 
 > 📝 Icons: 🆓 = free / open-source / free tier; 💰 = paid plan (some offer limited free access)
 
